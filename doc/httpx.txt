@@ -1,0 +1,12 @@
+================================================================================
+                                                                    *httpx.nvim*
+
+httpx.nvim is a plugin for Neovim that provides a fast HTTP client.
+
+To find out more:  https://github.com/httpx-sh/httpx.vim
+
+  :h Httpx
+
+Httpx                                                                   *Httpx*
+    Execute httpx request from current line
+================================================================================
