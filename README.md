@@ -1,4 +1,4 @@
-httpx.vim plugin
+httpx.vim Neovim plugin
 ====================
 
 # Getting started
