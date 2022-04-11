@@ -11,6 +11,7 @@ git clone https://github.com/httpx-sh/httpx.vim.git \
 ```
 
 * Open index.http file and move the cursor to a request, then invoke `:Httpx` command
+* In command mode, press `ctrl-h` to make request.
 
 # References
 
