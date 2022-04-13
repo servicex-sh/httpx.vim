@@ -11,7 +11,11 @@ git clone https://github.com/httpx-sh/httpx.vim.git \
 ```
 
 * Open index.http file and move the cursor to a request, then invoke `:Httpx` command
-* In command mode, press `ctrl-h` to make request.
+* You can bind keymap as following and press `ctrl-h` to make request
+
+```
+nnoremap <c-h> :Httpx<CR>
+```
 
 # ScreenShot
 
