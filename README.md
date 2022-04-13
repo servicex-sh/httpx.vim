@@ -13,6 +13,7 @@ git clone https://github.com/httpx-sh/httpx.vim.git \
 * Open index.http file and move the cursor to a request, then invoke `:Httpx` command
 * You can bind keymap as following and press `ctrl-h` to make request
 
+**Tips**: For code completion, please install [GitHub Copilot.vim](https://github.com/github/copilot.vim) 
 ```
 nnoremap <c-h> :Httpx<CR>
 ```
