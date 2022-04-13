@@ -15,7 +15,7 @@ git clone https://github.com/httpx-sh/httpx.vim.git \
 
 # ScreenShot
 
-![httpx Neovim](./doc/screen.png)
+![httpx Neovim](./doc/screen-shot.png)
 
 # References
 
