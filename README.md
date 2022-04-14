@@ -6,7 +6,7 @@ httpx.vim Neovim plugin
 * Install httpx.vim manually: 
 
 ```
-git clone https://github.com/httpx-sh/httpx.vim.git \
+git clone https://github.com/servicex-sh/httpx.vim.git \
   ~/.config/nvim/pack/github/start/httpx.vim
 ```
 
