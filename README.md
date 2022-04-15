@@ -30,7 +30,7 @@ autocmd FileType httpfile :iabbrev <buffer> hget
 
 autocmd FileType httpfile :iabbrev <buffer> hpost 
 \<CR>### http post
-\<CR>POST https://httpbin.org/post
+\<CR>POST http://httpbin.org/post
 \<CR>Content-Type: application/json
 \<CR>
 \<CR>
