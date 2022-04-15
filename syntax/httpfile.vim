@@ -12,8 +12,17 @@ syntax match httpfileKeywords "\v^%(GET|POST|HEAD|PUT|DELETE|RSOCKET|RPC|FNF|STR
 syntax match httpfileHeaders "\v^%(Accept|Accept-Charset|Accept-Encodingg|Accept-Datetime|Accept-Language|Authorization|Content-Type|Cache-Control|Cookie|Content-Length|Content-MD5|Date|From|Host|If-Modified-Since|Max-Forwards|Origin|Pragma|Proxy-Authorization|Range|Referer|User-Agent|X-Requested-With|X-Forwarded-For|X-Forwarded-Host|X-Forwarded-Proto|X-Csrf-Token|X-JSON-Type|Subject|Reply-to|URI|X-JSON-Schema|X-JSON-Type|X-JSON-Path|X-Region-Id|X-GraphQL-Variables|X-SSH-Private-Key|X-Args-0|X-Args-1|X-Args-2|X-Args-3|X-Args-4|X-Args-5):"
 syntax match httpfileVariables "\v\{\{[^\}]+\}\}"
 
-highlight default link httpfileKeywords Keyword
-highlight default link httpfileComment1 Comment
-highlight default link httpfileComment2 Comment
-highlight default link httpfileHeaders  Constant
+syntax match httpOperator "\v\?"
+syntax match httpOperator "\v\="
+syntax match httpOperator "\v\&"
+
+syntax region jsonString start=/"/ skip=/\./ end=/"/ contains=httpfileVariables
+
+
+highlight default link httpfileKeywords   Keyword
+highlight default link httpfileComment1   Comment
+highlight default link httpfileComment2   Comment
+highlight default link httpfileHeaders    Constant
 highlight default link httpfileVariables  Function
+highlight default link jsonString         String
+highlight default link httpOperator       Operator
