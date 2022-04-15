@@ -19,6 +19,23 @@ nnoremap <c-h> :Httpx<CR>
 
 **Tips**: For code completion, please install [GitHub Copilot.vim](https://github.com/github/copilot.vim)
 
+# Abbreviations
+
+httpx vim plugin with following abbreviations by default, and you can add more customized abbreviations. 
+
+```vim
+autocmd FileType httpfile :iabbrev <buffer> hget 
+\<CR>### http get
+\<CR>GET http://httpbin.org/ip
+
+autocmd FileType httpfile :iabbrev <buffer> hpost 
+\<CR>### http post
+\<CR>POST https://httpbin.org/post
+\<CR>Content-Type: application/json
+\<CR>
+\<CR>
+```
+
 # ScreenShot
 
 ![httpx Neovim](./doc/screen-shot.png)
