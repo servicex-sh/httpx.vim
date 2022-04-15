@@ -5,7 +5,7 @@ command! Httpx lua require("httpx").execute()
 
 let g:loaded_httpx = 1
 
-autocmd BufNewFile *.http :call setline('.', '#!/usr/bin/env httpx --httpfile\n')
+autocmd BufNewFile *.http :call setline('.', '#!/usr/bin/env httpx --httpfile')
 autocmd FileType httpfile :iabbrev <buffer> hget 
 \<CR>### http get
 \<CR>GET http://httpbin.org/ip
